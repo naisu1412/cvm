@@ -1,0 +1,37 @@
+always add auto increment in the primary key
+
+CRUD
+
+connectionString = @"Data Source=servername;Initial Catalog = dbname;Integrated Security=True";
+string connectionString = @"Data Source=DESKTOP-VHGKKQ6;Initial Catalog = Proj011919;Integrated Security=True";
+
+
+create - insert into
+read - select *
+update 
+delete
+
+
+using(){}
+
+creating login form
+
+-connect to database
+-make a model for the database
+-create a form 
+	- add @model
+	@using(HTML.BeginForm(FormMethod.Post)){<table></table>}
+	- for textbox @Html.LabelFor and @Html.EditorFor(model => model.password) and @HTML.DisplayFor
+	- you can change the display name and data type
+	- for submit <input type="submit" name="name" value="Login">
+
+Controller	
+- next is add the post url
+- you can an autorization [httpPost]
+- gawa na ng authorization(model){}
+- gawa ng using(entity){}
+- var userDetals = db.Accounts.Where(x => x.username == accModel.username && x.password == accModel.password).FirstOrDefault();
+
+- add the post url to the login, 	
+- for the required you can also drag and drop
+
